@@ -1,0 +1,9 @@
+{
+    "name": "grid-component",
+    "version": "0.1.0",
+    "description": "Abstraction of a CSS Grid Module",
+    "main": "main/index.ts",
+    "repository": "https://github.com/chemikpil/grid-styled-component",
+    "author": "Michał \"chemikpil\" Maćkowiak",
+    "license": "MIT"
+}
