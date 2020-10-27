@@ -77,9 +77,9 @@ Abstraction for CSS Grid Module with more friendly API. Grid Styled Component us
         [bottom-start] auto [bottom-end]
     "
 >
-    <Grid.Item row="top-start / top-end">home</Grid.Item>
-    <Grid.Item row="center-start / center-end">logo</Grid.Item>
-    <Grid.Item row="bottom-start / bottom-end">menu</Grid.Item>
+    <Grid.Item row="top-start / top-end">top</Grid.Item>
+    <Grid.Item row="center-start / center-end">center</Grid.Item>
+    <Grid.Item row="bottom-start / bottom-end">bottom</Grid.Item>
 </Grid.Vertical>
 ```
 
