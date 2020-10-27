@@ -7,13 +7,15 @@ Abstraction for CSS Grid Module with more friendly API. Grid Styled Component us
 #### Horizontal
 
 ```HTML
-<Grid.Horizontal itemSize={200} justifyContent="space-between">
+<Grid.Horizontal itemSize={50} justifyContent="space-between" debug>
     <div>Item 1</div>
     <div>Item 2</div>
     <div>Item 3</div>
     <div>Item 4</div>
-<Grid.Horizontal>
+</Grid.Horizontal>
 ```
+
+[Demo](https://kh26n.csb.app/horizontal)
 
 #### Vertical
 
@@ -25,6 +27,8 @@ Abstraction for CSS Grid Module with more friendly API. Grid Styled Component us
     <div>Item 4</div>
 </Grid.Vertical>
 ```
+
+[Demo](https://kh26n.csb.app/vertical)
 
 #### Complex layout 2x2
 
@@ -38,6 +42,8 @@ Abstraction for CSS Grid Module with more friendly API. Grid Styled Component us
     <Grid.Item>Item 6</Grid.Item>
 </Grid.Layout>
 ```
+
+[Demo](https://kh26n.csb.app/complex)
 
 #### Responsive break
 
@@ -55,6 +61,8 @@ Abstraction for CSS Grid Module with more friendly API. Grid Styled Component us
     <Grid.Item>Item 4</Grid.Item>
 </Grid.Horizontal>
 ```
+
+[Demo](https://kh26n.csb.app/responsive)
 
 #### Multigap (API will change)
 
@@ -74,6 +82,8 @@ Abstraction for CSS Grid Module with more friendly API. Grid Styled Component us
     <Grid.Item row="bottom-start / bottom-end">menu</Grid.Item>
 </Grid.Vertical>
 ```
+
+[Demo](https://kh26n.csb.app/multigap)
 
 ### 🛠 API
 
