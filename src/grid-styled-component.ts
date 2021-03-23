@@ -191,7 +191,7 @@ const getLayoutProps = ({
 const getItemProps = ({ ...props }: GridItemProps) => ({
     ...(props.column && { gridColumn: props.column }),
     ...(props.row && { gridRow: props.row }),
-    ...(props.justifySelf && { alignSelf: props.justifySelf }),
+    ...(props.justifySelf && { justifySelf: props.justifySelf }),
     ...(props.alignSelf && { alignSelf: props.alignSelf }),
     ...(props.centerSelf && { placeSelf: 'center' }),
     ...(props.centerContent && {
@@ -201,13 +201,14 @@ const getItemProps = ({ ...props }: GridItemProps) => ({
     }),
 });
 
-const Grid = {
-    Horizontal: styled.div<GridProps & { children: Children }>(
-        getHorizontalProps
-    ),
-    Vertical: styled.div<GridProps & { children: Children }>(getVerticalProps),
-    Layout: styled.div<GridLayoutProps>(getLayoutProps), // TO DO: pick a better name
-    Item: styled.div<GridItemProps>(getItemProps),
-};
+const Grid = () => styled.div<GridLayoutProps>(getLayoutProps);
+
+Grid.Horizontal = styled.div<GridProps & { children: Children }>(
+    getHorizontalProps
+);
+Grid.Vertical = styled.div<GridProps & { children: Children }>(
+    getVerticalProps
+);
+Grid.Item = styled.div<GridItemProps>(getItemProps);
 
 export { Grid };
