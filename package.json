@@ -1,6 +1,6 @@
 {
     "name": "grid-styled-component",
-    "version": "0.1.6",
+    "version": "0.1.7",
     "description": "Abstraction for CSS Grid Module",
     "main": "dist/index.js",
     "module": "dist/grid-styled-component.esm.js",
