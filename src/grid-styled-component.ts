@@ -1,17 +1,17 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-type PlacementItems = 'start' | 'end' | 'center' | 'stretch';
+export type PlacementItems = 'start' | 'end' | 'center' | 'stretch';
 
-type PlacementContent =
+export type PlacementContent =
     | PlacementItems
     | 'space-between'
     | 'space-around'
     | 'space-evenly';
 
-type Children = React.ReactNode | React.ReactNode;
+export type Children = React.ReactNode | React.ReactNode;
 
-interface GridProps {
+export interface GridProps {
     units?: string;
     itemSize?: string | number;
     items?: number;
@@ -36,25 +36,25 @@ interface GridProps {
     as?: string;
 }
 
-interface GridLayoutProps extends GridProps {
+export interface GridLayoutProps extends GridProps {
     columns?: number;
     rows?: number;
     columnSize?: number;
     rowSize?: number;
 }
 
-type Template = {
+export type Template = {
     items: number;
     size: number | string;
     units: string;
 };
 
-type Unit = {
+export type Unit = {
     value: number | string;
     units: string;
 };
 
-interface GridItemProps {
+export interface GridItemProps {
     column?: string;
     row?: string;
     justifySelf?: PlacementItems;
